@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="login">
+    <nav class="flex justify-between py-4 px-15 shadow-xl">
+        <h2 class="text-4xl font-bold">EstateElite</h2>
+        <div>
+            <button class="text-xl font-medium py-2 px-10 rounded-3xl bg-white shadow-2xl hover:bg-white cursor-pointer">login</button>
+        </div>
+    </nav>
+    <div class="max-md:flex flex-col max-md:items-center">
+    <div class="bg-[#F3F2F1] mx-120 mt-9 flex justify-center max-md:items-center">
+        <button class="bg-[#F3F2F1] py-2 px-30 rounded-2xl hover:bg-white cursor-pointer">Login</button>
+        <button class="bg-[#F3F2F1] py-1 px-30 rounded-2xl hover:bg-white cursor-pointer max-md:px-25"><a href="SignUpPage.html">Signup</a></button>
+    </div>
+    <div class="text-center bg-white shadow-2xl h-120 w-120 items-center ml-130 mt-10 max-md:ml-1">
+        <h2 class="font-bold text-2xl font-serif">Welcome Back</h2>
+        <p class="font-serif">Enter your credentials to access your account</p>
+        <label class="mr-98" for="Email">Email</label>
+        <input class="border border-[#DBB3CC] min-w-[90%] px-2 py-2 rounded-lg mb-5 mt-2" type="text" name="Email" id="Email" placeholder="name@example.com"><br>
+        <label class="mr-65 mb-2" for="Password">Password</label>
+        <a class="float-right text-[10px] underline mt-2 mr-7" href="ForgetPassword.html">forget password?</a><br>
+        <input class="min-w-[90%] border border-[#DBB3CC] rounded-lg py-2 mt-2"type="password" name="password" id="password" placeholder="**********"><br>
+        <button class="bg-[#F3F2F1] mt-6 py-1 px-45 rounded-lg">Login</button>
+        <div class="flex justify-center">
+            <div class="border-b border-[#DBB3CC]  mb-2.5 w-35"></div>
+            <p class="mt-10">OR CONTINUE WITH</p><br>
+            <div class="border-b border-[#DBB3CC] mb-2.5 w-35"></div>
+        </div>
+        <section class="flex gap-5 justify-center mt-5">
+        <button class="py-2 px-5 border-1 rounded-lg">Google</button>
+        <button class="py-2 px-5 border-1 rounded-lg">Apple</button>
+        </section>
+    </div>
+    </div>
+</body>
+</html> 

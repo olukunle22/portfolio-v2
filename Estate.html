@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="Estate" class="font-serif max-md-hidden">
+    <nav class="flex justify-between px-12 py-3  fixed top-0 right-0 left-0 align-center z-100 bg-white">
+        <h2 class="font-bold text-3xl">EstateElite</h2>
+        <ul class="flex gap-8 content-center max-md:hidden">
+            <li><a class="white" href="#home">Home</a></li>
+            <li><a href="#Properties"> Properties</a></li>
+            <li><a href="#Agent">Agents</a></li>
+            <li><a href="#About">About</a></li>
+        </ul>
+        <div class="flex gap-5 items-center relative border-1 rounded-full max-md:hidden">
+            <img class="w-5 invert absolute left-2" src="./Image/user.png" alt="">
+            <button class="py-2 px-10 bg-white text-black rounded-4xl max-md:hidden"><a href="LoginPage.html">login</a></button>
+        </div>
+        <div class="flex flex-col items-end  group hidden relative max-md:flex flex-col gap-1 cursor-pointer">
+            <div class="bg-black w-6 p-[2px]"></div>
+            <div class="bg-black w-5 p-[2px]"></div>
+            <div class="bg-black w-4 p-[2px]"></div>
+            <div class="bg-black w-3 p-[2px]"></div>
+            <div
+                class="hidden group-hover:flex bg-white absolute top-4 z-2 w-40 -left-25 p-5 flex flex-col w-60 shadow-2xl rounded-lg">
+                <ul class="flex flex-col gap-2 content-center">
+                    <li><a class="white" href="#home">Home</a></li>
+                    <li><a href="#Properties"> Properties</a></li>
+                    <li><a href="#Agent">Agents</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+                <button class="py-2 px-10 bg-black text-white rounded-4xl">login</button>
+            </div>
+        </div>
+    </nav>
+    <header
+        class="-mt-20 bg-[url(./Image/francesca-tosolini-qnSTxcs0EEs-unsplash.jpg)]  bg-cover bg-center bg-no-repeat text-opacity-10 h-screen">
+        <div id="home" class=" backdrop-brightness-60 flex flex-col justify-center items-center h-screen">
+            <h2 class="text-5xl font-bold mb-5 text-white max-md:text-center">Find Your Perfect Home</h2>
+            <p class="text-base text-white font-normal max-w-md mb-20 text-center">Discover exclusive properties for
+                rent, lease, or sale with EstateElite's curated collection</p>
+            <div class="flex relative items-center flex-col justify-center">
+                <img class="w-7 -ml-50 max-md:-ml-54 absolute left-58" src="./Image/search.png" alt="">
+                <section><input class="w-200 max-md:w-100 max-md:m-0 bg-white py-3 p-15  ml-2 rounded-full" type="search" name="search"
+id="search" placeholder="City, neighborhood, or address"></section>
+                <button class="bg-black  text-white px-5 py-2 rounded-full  absolute right-2">
+                    <search>search</search>
+                </button>
+            </div>
+            <div class="flex gap-9 justify-center mt-25 ">
+                <button
+                    class="py-2 px-5 bg-white text-black rounded-full hover:bg-[899FAC] transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">Buy</button>
+                <button
+                    class="py-2 px-5 bg-white text-black rounded-full hover:bg-[899FAC] transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">Rent</button>
+                <button
+                    class="py-2 px-5 bg-white text-black rounded-full hover:bg-[899FAC] transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">Lease</button>
+                <button
+                    class="py-2 px-5 bg-white text-black rounded-full hover:bg-[899FAC] transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">Luxury</button>
+                <button
+                    class="py-2 px-5 bg-white text-black rounded-full hover:bg-[899FAC] transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">New</button>
+            </div>
+        </div>
+        <img class="w-15 ml-[50%] -mt-20  animate-bounce " src="./Image/mouse.png" alt="">
+    </header>
+<!-- PROPERTIES SECTION  -->
+    <div class="bg-white">
+        <div class="text-center p-10 ">
+            <h2 class="text-black text-4xl font-normal">Featured Properties</h2>
+            <p class="text-black max-w-600">Discover our handpicked selection of premium properties that offer
+                exceptional value and unique features</p>
+        </div>
+        <div id="Properties" class="flex justify-around gap-2 font-sans flex-wrap rounded-b-sm">
+            <div
+                class="relative border border-transparent shadow-xl transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">
+                <img class="w-70 h-60 rounded-t-4xl" src="./Image/file_00000000.png" alt="">
+                <h3 class="text-black pl-2">Modern Beachfront Villa</h3>
+                <div class="flex gap-2 mt-2 pl-2">
+                    <img class="w-5 h-5" src="./Image/location.png" alt="">
+                    <p class="text-black text-xs font-thin">123 Oceanview Drive,Malibu, CA 90210</p>
+                </div>
+                <h3 class="text-black mt-1 pl-2">$5,250,000</h3>
+                <div class="flex gap-10 mt-2 pl-2">
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/bed.png" alt="">
+                        <p class="text-xs text-black">5 Beds</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/shower-tub-icon.png" alt="">
+                        <p class="text-xs max-w-md text-black">5.5 Baths</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/home.png" alt="">
+                        <p class="text-xs text-black">4500 sqft</p>
+                    </div>
+                </div>
+                <button
+                    class="bg-orange-300 hover:bg-orange-700 py-2 px-4 text-white hover:text-black absolute top-5 left-2 rounded-full font-bold text-xs">For
+                    Sale</button><br>
+                <button
+                    class=" bg-green-500 hover:bg-green-950 py-2 px-4 text-white hover:text-black absolute top-5 left-25 rounded-full font-bold text-xs">Featured</button>
+                <button class="bg-white absolute top-5 left-55 rounded-full p-1.5"><img class="w-5 h-5 invert"
+                        src="./Image/heart.png" alt=""></button>
+            </div>
+            <div
+                class="relative border border-transparent shadow-xl transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white rounded-b-sm">
+                <img class="w-70 h-60 rounded-t-4xl" src="./Image/file_0000000009.png" alt="">
+                <h3 class="text-black pl-2">luxury Downtown Penthouse</h3>
+                <div class="flex gap-2 pl-2 mt-2">
+                    <img class="w-5 h-5" src="./Image/location.png" alt="">
+                    <p class="text-black text-xs font-thin">789 5th Avenue, New York, NY 10022</p>
+                </div>
+                <p class="text-black pl-2">$12,000/month</p>
+                <div class="flex gap-10  pl-2 mt-2">
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/bed.png" alt="">
+                        <p class="text-xs text-black">3 Beds</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/shower-tub-icon.png" alt="">
+                        <p class="text-xs max-w-md text-black">3 Baths</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/home.png" alt="">
+                        <p class="text-xs text-black">2800 sqft</p>
+                    </div>
+                </div>
+                <button
+                    class="bg-blue-500 hover:bg-blue-950 py-2 px-4 text-white absolute top-5 left-2 rounded-full font-bold text-xs">For
+                    Sale</button><br>
+                <button
+                    class=" bg-green-500 hover:bg-green-950 py-2 px-4 text-white absolute top-5 left-25 rounded-full font-bold text-xs">Featured</button>
+                <button class="bg-white absolute top-5 left-55 rounded-full p-1.5"><img class="w-5 h-5 invert"
+                        src="./Image/heart.png" alt=""></button>
+            </div>
+            <div
+                class="relative border border-transparent shadow-xl  transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">
+                <img class="w-70 h-60 rounded-t-4xl" src="./Image/file_00000.png" alt="">
+                <h3 class="text-black pl-2">Contemporary office Space</h3>
+                <div class="flex gap-2 pl-2 mt-2">
+                    <img class="w-5 h-5" src="./Image/location.png" alt="">
+                    <p class="text-black text-xs font-thin">458 Business Center Blvd, Chicago, IL 60601</p>
+                </div>
+                <p class="text-black pl-2">$8,500/month</p>
+                <div>
+                    <div class="flex gap-10 pl-2">
+                        <div class="flex gap-1">
+                            <img class="w-4 h-4" src="./Image/bed.png" alt="">
+                            <p class="text-xs text-black">0 Beds</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <img class="w-4 h-4" src="./Image/shower-tub-icon.png" alt="">
+                            <p class="text-xs max-w-md text-black">2 Baths</p>
+                        </div>
+                        <div class="flex gap-1">
+                            <img class="w-4 h-4" src="./Image/home.png" alt="">
+                            <p class="text-xs text-black">3200 sqft</p>
+                        </div>
+                    </div>
+                    <button
+                        class="bg-blue-500 hover:bg-blue-950 py-2 px-4 text-white absolute top-5 left-2 rounded-full font-bold text-xs">For
+                        Sale</button><br>
+                    <button
+                        class=" bg-green-500 hover:bg-green-950 py-2 px-4 text-white absolute top-5 left-25 rounded-full font-bold text-xs">Featured</button>
+                    <button class="bg-white absolute top-5 left-55 rounded-full p-1.5"><img class="w-5 h-5 invert"
+                            src="./Image/heart.png" alt=""></button>
+                </div>
+            </div>
+            <div
+                class="border border-transparent shadow-xl relative transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white">
+                <img class="w-70 h-60 rounded-t-4xl" src="./Image/file_000000005.png" alt="">
+                <h3 class="text-black pl-2">Mountain View Retreat</h3>
+                <div class="flex gap-2 mt-2 pl-3">
+                    <img class="w-5 h-5" src="./Image/location.png" alt="">
+                    <p class="text-black text-xs font-thin">101 Alpine Way, Aspen, CO 81611</p>
+                </div>
+                <h3 class="text-black pl-2">$3,750,000</h3>
+                <div class="flex gap-10 pl-2">
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/bed.png" alt="">
+                        <p class="text-xs text-black">4 Beds</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/shower-tub-icon.png" alt="">
+                        <p class="text-xs max-w-md text-black">3.5 Baths</p>
+                    </div>
+                    <div class="flex gap-1">
+                        <img class="w-4 h-4" src="./Image/home.png" alt="">
+                        <p class="text-xs text-black">3800 sqft</p>
+                    </div>
+                </div>
+                <button
+                    class="bg-orange-300 hover:bg-orange-700 py-2 px-4 text-white absolute top-5 left-2 rounded-full font-bold text-xs">For
+                    Sale</button><br>
+                <button
+                    class=" bg-green-500 hover:bg-green-950 py-2 px-4 text-white absolute top-5 left-25 rounded-full font-bold text-xs">Featured</button>
+                <button class="bg-white absolute top-5 left-55 rounded-full p-1.5"><img class="w-5 h-5 invert"
+                        src="./Image/heart.png" alt=""></button>
+            </div>
+        </div>
+        <div class="flex justify-center p-5">
+            <button
+                class="text-black px-6 py-2 bg-[#CEDEDC] rounded-full align-center  shadow-xl transtion delay-150 duration-300 ease-in-out hover:-translate-x hover:scale-92 hover-bg-white"><a href="properties.html">View
+                All Properties</a></button>
+        </div>
+    </div>
+    <div id="Agent" class="bg-[#AFCAC7] pb-20">
+        <div class="text-center p-10">
+            <h1 class="text-black font-bold">How it Works</h1>
+            <p class="text-[#4C5756]">Finding your dream property is simple with our streamlined process</p>
+        </div>
+        <div class="flex justify-around flex-wrap max-md:flex max-md:gap-10">
+            <div class="text-center bg-white rounded-lg px-5 py-2 mb-5">
+                <button class="bg-black rounded-full p-2"><img class="w-7" src="./Image/location.png" alt=""></button>
+                <h3 class="text-black">Find Properties</h3>
+                <p class="text-[#404A49] max-w-[240px]">Browse our extensive collection of premium properties across
+                    desirable location</p>
+            </div>
+            <div class="text-center bg-white rounded-lg px-5 py-2 mb-5">
+                <button class="bg-black rounded-full p-2"><img class="w-7" src="./Image/speech-bubble.png"
+                        alt=""></button>
+                <h3 class="text-black">Connect with Agent</h3>
+                <p class="text-[#404A49] max-w-[250px]">Chat directly with our expert agent to discuss properties and
+                    arrange viewings</p>
+            </div>
+            <div class="text-center bg-white rounded-lg px-5 py-2 mb-5">
+                <button class="bg-black rounded-full p-2"><img class="w-7" src="./Image/heart.png" alt=""></button>
+                <h3 class="text-black">Secure Your Dream Home</h3>
+                <p class="text-[#404A49] max-w-[250px]">Complete the process smoothly with our support every step of the
+                    way</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[url(./image/toy-home.jpg)] bg-cover bg-no-repeat text-center pt-15">
+        <h2 class="text-white font-bold pb-5 text-4xl ">Ready to Find Your Perfect Property?</h2>
+        <p class="text-white pb-5">Join thousands of satisfied clients who found their dream homes with EstateElite</p>
+        <div class="flex gap-5 justify-center pb-20">
+            <div class="flex relative">
+                <button class="bg-white text-black py-3 px-15 rounded-full"><a href="LoginPage.html">Register now</a></button>
+                <img class="w-4 h-4 align-center absolute left-6 bottom-4 invert" src="./Image/user.png" alt="">
+            </div>
+            <button class="bg-white text-black py-3 px-15 rounded-full">Browse Properties</button>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="About" class="bg-[#110E2A] flex justify-around p-15 flex-wrap ">
+        <div>
+            <h2 class="text-white font-bold mb-2">EstateElite</h2>
+            <p class="max-w-80 text-white font-thin">Providing exceptional real estate service with a focus on luxury
+                properties and client satisfaction</p>
+            <div class="flex gap-5 mt-5">
+                <img class="w-5" src="./Image/twitter.png" alt="">
+                <img class="w-5 invert" src="./Image/instagram.png" alt="">
+                <img class="w-5 invert" src="./Image/facebook.png" alt="">
+            </div>
+        </div>
+        <div class="max-md:flex max-md:flex-col max-md:mr-50 flex gap-40">
+        <div class="max-md:mt-3">
+            <h2 class="text-white font-bold mb-2">Quick Links</h2>
+            <ul class="m2">
+                <li><a class="text-white" href="">Home</a></li>
+                <li><a class="text-white" href="">Property</a></li>
+                <li><a class="text-white" href="">Agents</a></li>
+                <li><a class="text-white" href="">About</a></li>
+                <li><a class="text-white" href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="max-md:-mt-35">
+            <h2 class="text-white font-bold mb-2">Property Types</h2>
+            <ul>
+                <li><a class="text-white" href="">Residential</a></li>
+                <li><a class="text-white" href="">Commercial</a></li>
+                <li><a class="text-white" href="">Luxury</a></li>
+                <li><a class="text-white" href="">Vacation</a></li>
+                <li><a class="text-white" href="">Investment</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="max-md:mr-20">
+            <h2 class="text-white font-bold mb-2">Contact</h2>
+            <div class="flex gap-2 mb-2">
+                <img class="w-5 h-5 mt-2" src="./Image/location.png" alt="">
+                <p class="text-white max-w-56">123 Estate Avenue, Suite 400 New York, NY 10010</p>
+            </div>
+            <div class="flex gap-2 mb-2">
+                <img class="w-5" src="./Image/telephone 1.png" alt="">
+                <p class="text-white">+1 (212) 555-1234</p>
+            </div>
+            <div class="flex gap-2 mb-2">
+                <img class="w-5 " src="./Image/mail.png" alt="">
+                <a class="text-white" href="">info@estateelite.com</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
